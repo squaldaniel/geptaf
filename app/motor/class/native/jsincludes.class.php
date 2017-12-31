@@ -23,11 +23,7 @@ class jsincludes {
 		return $this->content;
 	}
 	public function helpme(){
-			if(file_exists(PATHMOTOR . "helpme/".get_class()."_help.php")){
-				echo "existe";
-			} else {
-				echo "não existe ajuda para </b>" . get_class() . "</b,>:";
-			};
+			if(file_exists(PATHMOTOR."helpme/".get_class()."_help.php")){include(PATHMOTOR ."helpme/".get_class()."_help.php");}else{echo "não existe ajuda para </b>".get_class()."</b,>:";};
 		}
 }
 ?>
